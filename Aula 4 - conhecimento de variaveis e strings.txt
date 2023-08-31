@@ -1,0 +1,111 @@
+Bibliotecas
+
+using System;
+using System.Collection
+
+*OBS o sistema e case-sensitive verificar a existencia de maiscula eminuscula.
+
+
+==========================================================
+
+using System;
+namespace  Ola_mundo
+{
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Nome: ");
+        string nome = Console.ReadLine();
+        Console.WriteLine("Nome Digitado: "+nome);
+        
+    }
+}
+}
+
+===========================================================
+
+using System;
+namespace  Ola_mundo
+{
+public class Program
+{
+   static void Main(string[] args)
+    {
+        string carro = "Camaro";
+        float preco = 150000F;
+        
+        Console.WriteLine("O carro {0} custa R${1} reais", carro, preco);
+        const int n = 2000;
+        Console.WriteLine("O ano de Fabricacao do carro é: "+n);
+        
+        const int taxaporroda = 2;
+        int rodas;
+        int valorpedagio;
+        Console.WriteLine("Quantas rodas tem seu Veiculo?");
+        rodas = Convert.ToInt32(Console.ReadLine());
+        valorpedagio = rodas*taxaporroda;
+        Console.WriteLine("O valor do Pedagio é: "+valorpedagio);
+        
+    }
+}
+}
+
+Obs: o F ao final faz identificação de Float
+============================================================
+
+
+linkind: laisfragoso
+
+
+if (imc > 18.5);
+Console.WriteLine("Voce esta abaixo do peso");
+else if if (imc > 18.6 and imc < 24.9)
+Console.WriteLine("Voce esta no peso ideal");
+else if if (imc > 25.0 and imc < 29.9)
+Console.WriteLine("Voce esta Levemente acima do peso");
+else if if (imc > 25.0 and imc < 29.9)
+Console.WriteLine("Voce esta Levemente acima do peso");
+else
+Console.WriteLine("Voce esta com obesidade III Morbida");
+
+==============================================================
+
+namespace  IMC
+{
+public class Program
+{
+   static void Main(string[] args)
+    {
+        string nome;
+        double idade,altura,peso,imc;
+        
+        Console.WriteLine("Digite o seu nome: ");
+        nome = Console.ReadLine();
+        Console.WriteLine("Qual e a Sua idade?");
+        idade = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Qual e a sua Altura?");
+        altura = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Qual o seu Peso?");
+        peso = Convert.ToDouble(Console.ReadLine());
+        imc = peso/(altura*altura);
+        Console.WriteLine("Olá {0} o seu Indice de Maca Corporia é igual a {1}", nome, imc);
+        
+        if (imc < 18.5)
+            Console.WriteLine("De acordo com o seu IMC! Voce esta abaixo do peso");
+            else if (imc > 18.6 && imc < 24.9)
+                Console.WriteLine("De acordo com o seu IMC! Voce esta no peso ideal");
+            else if (imc > 25.0 && imc < 29.9)
+                Console.WriteLine("De acordo com o seu IMC! Voce esta Levemente acima do peso");
+            else if (imc > 30.0 && imc < 34.9)
+                Console.WriteLine("De acordo com o seu IMC! Voce esta com obesidade grau I");
+                else if (imc > 35.0 && imc < 39.9)
+                Console.WriteLine("De acordo com o seu IMC! Voce esta com obesidade grau II severa");
+        else
+            Console.WriteLine("De acordo com o seu IMC! Voce esta com obesidade III Morbida");
+        
+    }
+}
+}
+
+===============================================================
